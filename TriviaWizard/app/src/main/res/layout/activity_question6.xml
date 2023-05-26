@@ -1,0 +1,95 @@
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="Question6">
+
+        <TextView
+            android:id="@+id/question6"
+            android:layout_width="272dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Question-6"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/options6"
+            android:layout_width="241dp"
+            android:layout_height="188dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Question6">
+
+            <RadioButton
+                android:id="@+id/q6Option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lord of the Rings" />
+
+            <RadioButton
+                android:id="@+id/q6Option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Game of Thrones" />
+
+            <RadioButton
+                android:id="@+id/q6Option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frozen" />
+
+            <RadioButton
+                android:id="@+id/q6Option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Iron Man"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Question6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Which popular TV show featured house Targaryen and Stark?"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question6" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="215dp"
+            android:layout_height="245dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/targaryen_shield"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/options6" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="251dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="56dp"
+            android:text="Next Question"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/options6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+

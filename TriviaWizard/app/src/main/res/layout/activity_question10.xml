@@ -1,0 +1,109 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Question10">
+
+    <TextView
+        android:id="@+id/question10"
+        android:layout_width="272dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question-10"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/options10"
+        android:layout_width="241dp"
+        android:layout_height="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Question10">
+
+        <RadioButton
+            android:id="@+id/q10Option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valterri Bottas" />
+
+        <RadioButton
+            android:id="@+id/q10Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max Verstappen" />
+
+        <RadioButton
+            android:id="@+id/q10Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lewis Hamilton" />
+
+        <RadioButton
+            android:id="@+id/q10Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mich Schumacher"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f1_svg" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f1_svg" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="251dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Next Question"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options10" />
+
+    <TextView
+        android:id="@+id/Question10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Who won F1 Grand Championship 2022?"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question10" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="339dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/f1_svg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

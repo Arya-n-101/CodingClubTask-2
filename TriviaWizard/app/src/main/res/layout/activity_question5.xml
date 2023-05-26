@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Question5">
+
+    <TextView
+        android:id="@+id/question5"
+        android:layout_width="272dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question-5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/options5"
+        android:layout_width="241dp"
+        android:layout_height="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Question5">
+
+        <RadioButton
+            android:id="@+id/q5Option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let it come" />
+
+        <RadioButton
+            android:id="@+id/q5Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Up" />
+
+        <RadioButton
+            android:id="@+id/q5Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Into the Unknown" />
+
+        <RadioButton
+            android:id="@+id/q5Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Let it Go"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="251dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Next Question"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options5" />
+
+    <TextView
+        android:id="@+id/Question5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="What is the name of the song that Queen Elsa sings as she builds her ice castle in the movie Frozen?"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question5" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="343dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/frozen_logo_black_svg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

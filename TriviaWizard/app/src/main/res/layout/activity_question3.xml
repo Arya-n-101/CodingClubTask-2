@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Question3">
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="272dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question-2"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/actualQuestion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="What is the name of the man who launched eBay back in 1995 ?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+    <RadioGroup
+        android:id="@+id/options2"
+        android:layout_width="241dp"
+        android:layout_height="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actualQuestion2">
+
+        <RadioButton
+            android:id="@+id/q2Option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pierre Omidyar" />
+
+        <RadioButton
+            android:id="@+id/q2Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charles Babbage" />
+
+        <RadioButton
+            android:id="@+id/q2Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terry McGuire" />
+
+        <RadioButton
+            android:id="@+id/q2Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="James Peralta"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="251dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Next Question"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options2" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="382dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/_560px_ebay_logo_svg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

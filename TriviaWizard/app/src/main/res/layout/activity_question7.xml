@@ -1,0 +1,96 @@
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="Question7">
+
+        <TextView
+            android:id="@+id/question7"
+            android:layout_width="272dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Question-7"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/options7"
+            android:layout_width="241dp"
+            android:layout_height="188dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Question6">
+
+            <RadioButton
+                android:id="@+id/q7Option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1888" />
+
+            <RadioButton
+                android:id="@+id/q7Option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1998" />
+
+            <RadioButton
+                android:id="@+id/q7Option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1987" />
+
+            <RadioButton
+                android:id="@+id/q7Option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="1997"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="251dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="56dp"
+            android:text="Next Question"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/options7" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="407dp"
+            android:layout_height="209dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/_60px_south_park_sign_svg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+        <TextView
+            android:id="@+id/Question6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="In what year was the first episode of South Park aired?"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+

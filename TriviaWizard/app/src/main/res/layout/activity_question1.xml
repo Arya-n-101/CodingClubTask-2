@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question1">
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="272dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question-1"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/actualQuestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="In which year the very first model of the iPhone released? "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1" />
+
+    <RadioGroup
+        android:id="@+id/options"
+        android:layout_width="241dp"
+        android:layout_height="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actualQuestion1">
+
+        <RadioButton
+            android:id="@+id/q1Option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2005" />
+
+        <RadioButton
+            android:id="@+id/q1Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2009" />
+
+        <RadioButton
+            android:id="@+id/q1Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2006" />
+
+        <RadioButton
+            android:id="@+id/q1Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="2007"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="251dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Next Question"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="253dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@drawable/apple_computer_logo_rainbow_svg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

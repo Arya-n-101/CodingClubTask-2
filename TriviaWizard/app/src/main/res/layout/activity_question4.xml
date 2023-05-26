@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Question4">
+
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="272dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question-4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/options4"
+        android:layout_width="241dp"
+        android:layout_height="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Question4">
+
+        <RadioButton
+            android:id="@+id/q4Option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deceptive Comics" />
+
+        <RadioButton
+            android:id="@+id/q4Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detective Comics" />
+
+        <RadioButton
+            android:id="@+id/q4Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Directive Comics" />
+
+        <RadioButton
+            android:id="@+id/q4Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Doom's Day Comics"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="251dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="Next Question"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options4" />
+
+    <TextView
+        android:id="@+id/Question4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="What does DC stand for?"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question4" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="244dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/dc_comics_logo_svg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

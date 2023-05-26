@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trivia Wizard</string>
+    <string name="score"> %d/10</string>
+</resources>
